@@ -585,8 +585,8 @@ body {
 
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3.2rem;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 2.4rem;
 
   background-image: linear-gradient(
     to bottom,
@@ -602,10 +602,36 @@ body {
 
 .btn--submit {
   grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  padding-top: 4.8rem;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
 }
 
-.btn--full-submit:link,
-.btn--full-submit:visited {
+.form-group label {
+  margin-right: 1rem;
+}
+.form-text-input {
+  padding: 0.2rem;
+  width: 30rem;
+}
+.btn-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.btn--submit {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+
   background-color: #333533;
   padding: 1.6rem 3.2rem;
   width: 30rem;
@@ -613,39 +639,12 @@ body {
   font-weight: 600;
   letter-spacing: 0.75px;
   clip-path: polygon(30px 0, 300px 0, 270px 52px, 0 52px);
+  cursor: pointer;
+  border: none;
 }
-.form-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn--full-submit:hover,
-.btn--full-submit:active {
+.btn--submit:hover {
   box-shadow: inset 20em 0 0 0 #ffd100;
   color: #333533;
-}
-
-.form---container {
-  background-color: $primary-color;
-  width: 800px;
-  height: 450px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  line-height: 1.5;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(to bottom right, #ff9ec4, #ffd07e);
-    width: 900px;
-    height: 900px;
-    border-radius: 50%;
-    z-index: -1;
-  }
 }
 
 /***********************************************************************/
