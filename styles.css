@@ -564,6 +564,45 @@ body {
 .person:nth-child(5) {
   justify-self: start;
 }
+/***********************************************************************/
+/* FORM */
+/***********************************************************************/
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+
+  background-color: #ffee32;
+  padding: 4.8rem;
+  margin: 8.4rem;
+}
+
+.btn--submit {
+  grid-column: 1 / -1;
+}
+
+.btn--full-submit:link,
+.btn--full-submit:visited {
+  background-color: #333533;
+  padding: 1.6rem 3.2rem;
+  width: 30rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  clip-path: polygon(30px 0, 300px 0, 270px 52px, 0 52px);
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--full-submit:hover,
+.btn--full-submit:active {
+  box-shadow: inset 20em 0 0 0 #ffd100;
+  color: #333533;
+}
 
 /***********************************************************************/
 /* - FONT SIZE SYSTEM (px)
