@@ -35,7 +35,7 @@ palette:
 #665f14
 
 - Accents:
-#FFD100
+#FAA307
 - Greys:
 #D6D6D6
 #333533
@@ -161,7 +161,7 @@ body {
 
 .btn--full:hover,
 .btn--full:active {
-  box-shadow: inset 20em 0 0 0 #ffd100;
+  box-shadow: inset 20em 0 0 0 #faa307;
   color: #333533;
 }
 
@@ -220,14 +220,21 @@ body {
 }
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  box-shadow: inset 15em 0 0 0 #ffd100;
+  box-shadow: inset 15em 0 0 0 #faa307;
   color: #333533;
 }
 /***********************************************************************/
 /* HERO */
 /***********************************************************************/
 .section-hero {
-  background-color: #ffee32;
+  background-image: linear-gradient(
+    to bottom,
+    #ffee32,
+    #ffe126,
+    #ffd41b,
+    #ffc711,
+    #ffba08
+  );
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -419,6 +426,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.2rem;
+  margin: 8rem 0;
 }
 .review-img {
   width: 6.4rem;
@@ -548,7 +556,14 @@ body {
   position: absolute;
   height: 50%;
   width: 100%;
-  background-color: #ffee32;
+  background-image: linear-gradient(
+    to bottom,
+    #ffee32,
+    #ffe126,
+    #ffd41b,
+    #ffc711,
+    #ffba08
+  );
   top: 0;
   left: 0;
 }
@@ -573,7 +588,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 3.2rem;
 
-  background-color: #ffee32;
+  background-image: linear-gradient(
+    to bottom,
+    #ffee32,
+    #ffe126,
+    #ffd41b,
+    #ffc711,
+    #ffba08
+  );
   padding: 4.8rem;
   margin: 8.4rem;
 }
@@ -602,6 +624,28 @@ body {
 .btn--full-submit:active {
   box-shadow: inset 20em 0 0 0 #ffd100;
   color: #333533;
+}
+
+.form---container {
+  background-color: $primary-color;
+  width: 800px;
+  height: 450px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  line-height: 1.5;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to bottom right, #ff9ec4, #ffd07e);
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    z-index: -1;
+  }
 }
 
 /***********************************************************************/
