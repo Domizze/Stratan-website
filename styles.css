@@ -57,6 +57,7 @@ palette:
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -586,11 +587,17 @@ body {
 .section-form {
   padding-bottom: 9.6rem;
 }
+.container-form {
+  display: flex;
+  justify-content: center;
+}
 
 .form-grid {
-  display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
+  flex-shrink: 0;
+  width: 80rem;
 
   background-image: linear-gradient(
     to bottom,
