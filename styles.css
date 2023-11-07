@@ -613,6 +613,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.form-text {
+  line-height: 3rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 .btn--submit {
   grid-column: 1 / -1;
   display: flex;
@@ -623,10 +629,6 @@ body {
   display: flex;
   align-items: center;
   font-size: 1.8rem;
-}
-
-.form-group:nth-child(5) {
-  margin-bottom: 3.2rem;
 }
 
 .form-group label {
@@ -675,6 +677,11 @@ body {
 .form-label-icon {
   width: 2.4rem;
   height: 2.4rem;
+}
+
+.radio-group {
+  font-size: 1.8rem;
+  line-height: 4rem;
 }
 
 /***********************************************************************/
