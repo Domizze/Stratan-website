@@ -1,3 +1,22 @@
+/* 1296px */
+@media (max-width: 81em) {
+  .heading-primary {
+    font-size: 3.6rem;
+    line-height: 1.1;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 1.4rem;
+    padding: 1.6rem 3.2rem;
+  }
+  .btn--full:link,
+  .btn--full:visited {
+    font-size: 1.4rem;
+    padding: 1.6rem 3.2rem;
+    width: 25rem;
+    clip-path: polygon(30px 0, 245px 0, 215px 52px, 0 52px);
+  }
+}
 /* 1025px — 1200px */
 @media (max-width: 75em) {
   .heading-primary {
