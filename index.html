@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,6 +27,10 @@
           <li><a href="#section-form" class="main-nav-link nav-cta">Apply now!</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -35,16 +40,17 @@
               Your Trusted Transportation Experts for Trucking Services
             </h1>
             <p class="hero-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur quasi repudiandae sapiente, possimus soluta dolorem
-              unde natus ab reiciendis quo, optio temporibus consequatur vero
-              eius commodi.
+              Relations based on trust, professionalism, transparency, communication, performance, and high efficiency are what we offer and seek from our partners. We consider partners to be our drivers, customers, vendors, back office, and their families. Join this growing community. Contact us today!
             </p>
             <div class="hero-text-box-buttons">
               <a href="#section-form" class="btn btn--full">START EARNING MORE</a>
               <a href="tel:702-960-4266" class="hero-phone-number"
                 ><ion-icon name="call" class="phone-icon"></ion-icon> &nbsp;
-                702-960-4266
+                702-960-4266 
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
               </a>
             </div>
           </div>
@@ -84,7 +90,7 @@
           <span class="subheading">Services</span>
           <h2 class="heading-secondary">Your own way of doing business</h2>
         </div>
-        <div class="container grid grid--3-cols">
+        <div class="container services-grid">
           <div class="service">
             <img
               src="img/services/Lease.jpg"
@@ -94,11 +100,9 @@
             <div class="service-content">
               <p class="service-title">LEASE PURCHASE</p>
               <p class="service-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Cupiditate ea dolorum corporis quidem sed, dolores nobis
-                delectus laboriosam itaque voluptas?
+                Embark on a new career path with our Lease Purchase Program. Experienced CDL drivers can become proud owners of our well-maintained fleet units. We handle all paperwork, ensuring you're on the road in 2-4 days with your first payment in hand within 10 days. Enjoy perks like free yard parking, discounted repairs, fuel card savings, and competitive insurance rates. Join us for a seamless transition into ownership. Contact us today!
               </p>
-              <a href="#" class="btn--inverted">Lean more</a>
+              <a href="#section-form" class="btn--inverted">Lean more</a>
             </div>
           </div>
           <div class="service">
@@ -110,11 +114,9 @@
             <div class="service-content">
               <p class="service-title">OWNER OPERATOR</p>
               <p class="service-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Cupiditate ea dolorum corporis quidem sed, dolores nobis
-                delectus laboriosam itaque voluptas?
+                With half our fleet built by esteemed owner operators, we prioritize your satisfaction. Rather than chasing miles, our focus lies in maximizing RPM through strategic dispatching of no-tarp, light, oversize loads, short runs, partials, and dedicated lanes. We're committed to reducing your operational costs and charge only a modest 12% dispatch fee. Allow us to manage your paperwork, including registration, IFTA, insurance, licensing, accounting, safety, and dispatch processes.
               </p>
-              <a href="#" class="btn--inverted">Lean more</a>
+              <a href="#section-form" class="btn--inverted">Lean more</a>
             </div>
           </div>
           <div class="service">
@@ -124,13 +126,11 @@
               class="service-img"
             />
             <div class="service-content">
-              <p class="service-title">DRIVER CONTRACTOR</p>
+              <p class="service-title">COMPANY DRIVER</p>
               <p class="service-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Cupiditate ea dolorum corporis quidem sed, dolores nobis
-                delectus laboriosam itaque voluptas?
+                Elevate your CDL career with us. As a driver with a spotless record, it's time to earn based on a percentage, not just miles. Specialized loads, oversize freight, and more await. Enjoy bonuses for clean inspections, top performance, and referrals. Reset at home, not on the road. After one year, explore our lease-to-own program. Join our fleet and be more than just a number. Contact us today!
               </p>
-              <a href="#" class="btn--inverted">Lean more</a>
+              <a href="#section-form" class="btn--inverted">Lean more</a>
             </div>
           </div>
         </div>
@@ -155,14 +155,14 @@
             <ion-icon name="people-outline" class="feature-icon"></ion-icon>
             <p class="feature-title">Dispatch</p>
             <p class="feature-text">
-              Precision dispatch: Timely routes for optimized deliveries and satisfied customers.
+              Strong relationships matter. Get personalized service with dedicated dispatch at our side.
             </p>
           </div>
           <div class="feature">
             <ion-icon name="trophy-outline" class="feature-icon"></ion-icon>
             <p class="feature-title">Bonus</p>
             <p class="feature-text">
-              Driver of the Month: Recognizing excellence, rewarding dedication in every mile.
+              Performance bonuses for excellence: clean inspections, loyalty, referrals, and more.
             </p>
           </div>
           <div class="feature">
@@ -172,14 +172,14 @@
             ></ion-icon>
             <p class="feature-title">Market</p>
             <p class="feature-text">
-              Precision in motion: Analyzing markets for optimal freight solutions every mile.
+              We prioritize high-value freight, steering clear of low market rates.
             </p>
           </div>
           <div class="feature">
             <ion-icon name="analytics-outline" class="feature-icon"></ion-icon>
             <p class="feature-title">Planning</p>
             <p class="feature-text">
-              Strategic routes, efficient schedules: Where planning meets precision in transport.
+              Strategic routes, efficient schedules: Where planning helps minimize downtime.
             </p>
           </div>
         </div>
@@ -614,7 +614,7 @@
                       value="RGN"
                       />
                       RGN</label
-                      ><br>
+                      ><br><br>
                       <label for="dryvan"
                         ><input
                           type="checkbox"
@@ -733,5 +733,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
