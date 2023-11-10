@@ -242,6 +242,22 @@
   .section-hero {
     padding: 0;
   }
+  .form-group {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .reviews-container {
+    padding: 4.8rem 3.4rem;
+  }
+  .reviews {
+    margin-top: 6.4rem;
+  }
+  .team-grid {
+    row-gap: 4.8rem;
+  }
+  .form-grid {
+    margin: 0;
+  }
 }
 
 /* 
