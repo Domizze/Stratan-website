@@ -479,7 +479,9 @@
         <div class="container">
           <span class="subheading">Join Our Team</span>
           <h2 class="heading-secondary">Apply Now</h2>
-          <form id="application-form" data-netlify="true" name="new-driver-application" class="container-form ">
+          <form id="application-form" data-netlify="true" name="new-driver-application" class="container-form " action="https://formsubmit.co/cj@strataninc.com" method="POST">
+            <input type="hidden" name="_subject" value="New DRIVER!">
+            <input type="hidden" name="_template" value="table">
             <div class="form-grid">
               <div class="form-group">
                 <p class="form-text">
@@ -587,6 +589,7 @@
                   Trailer Type
                 </span>
                 </label>
+                <br>
                 <div class="checkbox-group">
                   <label for="flatbed"
                   ><input
@@ -644,11 +647,13 @@
                   >
                 </div>
               </div>
+
               <div class="form-group">
                 <label name="Application Type"><span class="form-label-span">
                   Application Type
                 </span>
                 </label>
+                <br>
                 <div class="radio-group">
                   <label for="lease"
                     ><input
