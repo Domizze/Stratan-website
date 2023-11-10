@@ -232,10 +232,16 @@
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .form-text {
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
-  } */
+  .hero {
+    padding: 0;
+    gap: 0;
+  }
+  .hero-text-box {
+    padding: 3.2rem;
+  }
+  .section-hero {
+    padding: 0;
+  }
 }
 
 /* 
