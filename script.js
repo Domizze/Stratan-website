@@ -5,8 +5,12 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
-document.querySelector("main-nav-link").addEventListener("click", function () {
-  headerEl.classList.remove("nav-open");
+const btnNavItems = document.querySelectorAll(".main-nav-link");
+
+btnNavItems.forEach(function (btnNavItem) {
+  btnNavItem.addEventListener("click", function () {
+    headerEl.classList.remove("nav-open");
+  });
 });
 
 // sticky nav
