@@ -5,6 +5,9 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+document.querySelector("main-nav-link").addEventListener("click", function () {
+  headerEl.classList.remove("nav-open");
+});
 
 // sticky nav
 const selectionHeroEl = document.querySelector(".section-hero");
