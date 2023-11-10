@@ -17,7 +17,7 @@
     clip-path: polygon(30px 0, 245px 0, 215px 52px, 0 52px);
   }
 }
-/* 1025px — 1200px */
+/*  1200px */
 @media (max-width: 75em) {
   .heading-primary {
     font-size: 3.6rem;
@@ -40,10 +40,10 @@
     font-size: 2rem;
   }
   .hero {
-    gap: 6.4rem;
+    gap: 4.8rem;
   }
   .grid {
-    gap: 6.4rem;
+    gap: 4.8rem;
   }
   .features-grid {
     gap: 3.2rem;
@@ -56,8 +56,14 @@
 .services-grid {
   gap: 6.4rem;
 }
+.service-description {
+  font-size: 1.4rem;
+}
+.reviews-container {
+  padding-right: 4.8rem;
+}
 
-/* 976px — 1024px */
+/*  1024px */
 @media (max-width: 64em) {
   .main-nav-list {
     gap: 2rem;
@@ -70,7 +76,7 @@
   gap: 4.8rem;
 }
 
-/*896px  976px mobile nav*/
+/* 976px mobile nav*/
 @media (max-width: 61em) {
   .btn-mobile-nav {
     display: block;
@@ -127,14 +133,23 @@
     flex-direction: column;
     gap: 3.2rem;
   }
+  .feature-text {
+    line-height: 1.2;
+  }
+  .features-grid {
+    gap: 2.4rem;
+  }
 }
 
-/* 769px - 896px */
+/* - 896px */
 @media (max-width: 56em) {
   .hero {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 0 6.4rem 0 6.4rem;
+  }
+  .hero-img-box {
+    grid-row-start: 1;
   }
   .section-hero {
     padding: 4.8rem 0 4.8rem 0;
@@ -154,6 +169,24 @@
   .reviews {
     display: flex;
     flex-direction: column;
+  }
+
+  .about-text-content {
+    font-size: 1.4rem;
+  }
+  .reviews {
+    margin-bottom: 0;
+  }
+  .about-grid {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
+}
+
+/* 800px */
+@media (max-width: 50em) {
+  .form-grid {
+    max-width: 70rem;
   }
 }
 
